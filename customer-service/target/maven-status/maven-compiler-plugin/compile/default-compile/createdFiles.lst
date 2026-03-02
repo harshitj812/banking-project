@@ -1,0 +1,5 @@
+com\bank\customer\config\SecurityConfig.class
+com\bank\customer\model\Customer.class
+com\bank\customer\CustomerServiceApplication.class
+com\bank\customer\repository\CustomerRepository.class
+com\bank\customer\controller\CustomerController.class

@@ -1,0 +1,47 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "run customer-service",
+      "type": "shell",
+      "command": "mvn spring-boot:run",
+      "args": [],
+      "options": { "cwd": "${workspaceFolder}/customer-service" },
+      "problemMatcher": []
+    },
+    {
+      "label": "run transaction-service",
+      "type": "shell",
+      "command": "mvn spring-boot:run",
+      "options": { "cwd": "${workspaceFolder}/transaction-service" },
+      "problemMatcher": []
+    },
+    {
+      "label": "run security-service",
+      "type": "shell",
+      "command": "mvn spring-boot:run",
+      "options": { "cwd": "${workspaceFolder}/security-service" },
+      "problemMatcher": []
+    },
+    {
+      "label": "run support-service",
+      "type": "shell",
+      "command": "mvn spring-boot:run",
+      "options": { "cwd": "${workspaceFolder}/support-service" },
+      "problemMatcher": []
+    },
+    {
+      "label": "run frontend",
+      "type": "shell",
+      "command": "npm start",
+      "options": {
+        "cwd": "${workspaceFolder}/frontend",
+        "env": {
+          // include common Node installation path so that tasks work even if PATH isn't set globally
+          "PATH": "${env:PATH};C:\\Program Files\\nodejs"
+        }
+      },
+      "problemMatcher": []
+    }
+  ]
+}
